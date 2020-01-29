@@ -1,0 +1,50 @@
+h1{
+    color: red;
+}
+.clock {
+    position: relative;;
+    width:500px;
+    height:500px;
+    margin:40px auto;
+    background-image : url('/assets/clock-face.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+.clock:after{
+  position: absolute;
+  content: '';
+  background: black;
+  width: 5%;
+  height: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+ }
+.aiguille {
+    position: absolute;
+    transform-origin: 0 0;
+    top:50%;left:50%;
+    width:150px;
+    height:0px;
+    border-top:1px solid ;
+  }
+ 
+  .heure-aiguille {
+    left: 49%;
+    width: 25%;
+    border-top-width:10px;
+    color: rebeccapurple;
+    border-radius: 0% 50% 50% 0%;
+  }
+  .minute-aiguille {
+    width: 40%;
+    border-top-width:6px;
+    color: palevioletred;
+    border-radius: 0% 50% 50% 0%;
+  }
+
+  .seconde-aiguille {
+    width: 40%;
+    color: orangered;
+  }

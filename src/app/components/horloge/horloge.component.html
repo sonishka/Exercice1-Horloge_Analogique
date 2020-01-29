@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="clock">
+        <div class="aiguille heure-aiguille" [style.transform]="'rotate(' + (Hdegres|async) + 'deg)'"></div>
+        <div class="aiguille minute-aiguille" [style.transform]="'rotate(' + (Mdegres|async) + 'deg)'"></div>
+        <div class="aiguille seconde-aiguille" [style.transform]="'rotate(' + (Sdegres|async) + 'deg)'"></div>
+    </div>
+</div>
+
